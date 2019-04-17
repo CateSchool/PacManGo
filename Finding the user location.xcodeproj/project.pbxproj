@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721B29362252AF550000730F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B29352252AF550000730F /* Model.swift */; };
+		721B29362252AF550000730F /* LocationProximityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B29352252AF550000730F /* LocationProximityModel.swift */; };
 		C41649C61F645E5C0094427F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41649C51F645E5C0094427F /* AppDelegate.swift */; };
 		C41649C81F645E5C0094427F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41649C71F645E5C0094427F /* ViewController.swift */; };
 		C41649CB1F645E5C0094427F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41649C91F645E5C0094427F /* Main.storyboard */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		721B29352252AF550000730F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		721B29352252AF550000730F /* LocationProximityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProximityModel.swift; sourceTree = "<group>"; };
 		C41649C21F645E5C0094427F /* Finding the user location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finding the user location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41649C51F645E5C0094427F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C41649C71F645E5C0094427F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		728121A8226794C6006208E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				721B29352252AF550000730F /* LocationProximityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		728121A9226794DA006208E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C41649C71F645E5C0094427F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C41649B91F645E5C0094427F = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				C41649C51F645E5C0094427F /* AppDelegate.swift */,
-				C41649C71F645E5C0094427F /* ViewController.swift */,
-				721B29352252AF550000730F /* Model.swift */,
+				728121A9226794DA006208E6 /* ViewController */,
+				728121A8226794C6006208E6 /* Model */,
 				C41649C91F645E5C0094427F /* Main.storyboard */,
 				C41649CC1F645E5C0094427F /* Assets.xcassets */,
 				C41649CE1F645E5C0094427F /* LaunchScreen.storyboard */,
@@ -152,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721B29362252AF550000730F /* Model.swift in Sources */,
+				721B29362252AF550000730F /* LocationProximityModel.swift in Sources */,
 				C41649C81F645E5C0094427F /* ViewController.swift in Sources */,
 				C41649C61F645E5C0094427F /* AppDelegate.swift in Sources */,
 			);
