@@ -10,7 +10,9 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+
+
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, GIDSignInUIDelegate {
     var locationmanger = CLLocationManager()
     let locationProximityModel = LocationProximityModel()
     @IBOutlet weak var map: MKMapView!

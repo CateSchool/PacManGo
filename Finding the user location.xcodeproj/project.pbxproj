@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		721B29362252AF550000730F /* LocationProximityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B29352252AF550000730F /* LocationProximityModel.swift */; };
+		99A7BB2FC79342650257E19A /* Pods_Finding_the_user_location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DF5D3391A83B64599E8508 /* Pods_Finding_the_user_location.framework */; };
 		C41649C61F645E5C0094427F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41649C51F645E5C0094427F /* AppDelegate.swift */; };
 		C41649C81F645E5C0094427F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41649C71F645E5C0094427F /* ViewController.swift */; };
 		C41649CB1F645E5C0094427F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41649C91F645E5C0094427F /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB47CD8C7AF60FD5985682E /* Pods-Finding the user location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finding the user location.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location.release.xcconfig"; sourceTree = "<group>"; };
+		36DF5D3391A83B64599E8508 /* Pods_Finding_the_user_location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finding_the_user_location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		721B29352252AF550000730F /* LocationProximityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProximityModel.swift; sourceTree = "<group>"; };
 		C41649C21F645E5C0094427F /* Finding the user location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finding the user location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41649C51F645E5C0094427F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		C41649CF1F645E5C0094427F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C41649D11F645E5C0094427F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C41649D81F645EA90094427F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D4668EF2BE6E84B63C2B23D5 /* Pods-Finding the user location.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finding the user location.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C41649D91F645EA90094427F /* CoreLocation.framework in Frameworks */,
+				99A7BB2FC79342650257E19A /* Pods_Finding_the_user_location.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		8A3D5942227CF7342A070224 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4668EF2BE6E84B63C2B23D5 /* Pods-Finding the user location.debug.xcconfig */,
+				1BB47CD8C7AF60FD5985682E /* Pods-Finding the user location.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C41649B91F645E5C0094427F = {
 			isa = PBXGroup;
 			children = (
 				C41649C41F645E5C0094427F /* Finding the user location */,
 				C41649C31F645E5C0094427F /* Products */,
 				C41649D71F645EA80094427F /* Frameworks */,
+				8A3D5942227CF7342A070224 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C41649D81F645EA90094427F /* CoreLocation.framework */,
+				36DF5D3391A83B64599E8508 /* Pods_Finding_the_user_location.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C41649D41F645E5C0094427F /* Build configuration list for PBXNativeTarget "Finding the user location" */;
 			buildPhases = (
+				FB216A626CD359643BCD587D /* [CP] Check Pods Manifest.lock */,
 				C41649BE1F645E5C0094427F /* Sources */,
 				C41649BF1F645E5C0094427F /* Frameworks */,
 				C41649C01F645E5C0094427F /* Resources */,
+				504FB76388A929615D8EFAA2 /* [CP] Embed Pods Frameworks */,
+				0A31B18AAEFC8F34F2C906A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +181,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A31B18AAEFC8F34F2C906A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		504FB76388A929615D8EFAA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB216A626CD359643BCD587D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Finding the user location-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C41649BE1F645E5C0094427F /* Sources */ = {
@@ -293,6 +383,7 @@
 		};
 		C41649D51F645E5C0094427F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4668EF2BE6E84B63C2B23D5 /* Pods-Finding the user location.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69SF2RPHB9;
@@ -306,6 +397,7 @@
 		};
 		C41649D61F645E5C0094427F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB47CD8C7AF60FD5985682E /* Pods-Finding the user location.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69SF2RPHB9;

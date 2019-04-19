@@ -1,0 +1,6 @@
+framework module Pods_Finding_the_user_location {
+  umbrella header "Pods-Finding the user location-umbrella.h"
+
+  export *
+  module * { export * }
+}
