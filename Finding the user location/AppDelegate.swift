@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Finding the user location
 //
-//  Created by Mahmudur Rahman on 9/9/17.
+//  Created by Swifty Jason on 9/9/17.
 //  Copyright © 2017 Code Mask. All rights reserved.
 //
 

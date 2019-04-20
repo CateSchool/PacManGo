@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import GoogleSignIn
 
 
 
@@ -24,6 +25,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         locationmanger.desiredAccuracy = kCLLocationAccuracyBest
         locationmanger.requestWhenInUseAuthorization()
         locationmanger.startUpdatingLocation()
+   
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        // Uncomment to automatically sign in the user.
+        //GIDSignIn.sharedInstance().signInSilently()
+        
+        // TODO(developer) Configure the sign-in button look/feel
+        // ...
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,6 +87,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
     }
     
-
+    private func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
+        UIActivityIndicatorView.stopAnimating()
+    }
+    
+    // Present a view that prompts the user to sign in with Google
+    private func signIn(signIn: GIDSignIn!,
+                presentViewController viewController: UIViewController!) {
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    private func signIn(signIn: GIDSignIn!,
+                dismissViewController viewController: UIViewController!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func googleSignIn(_ sender: GIDSignInButton) {
+    }
+    
 }
 
