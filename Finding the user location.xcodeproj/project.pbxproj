@@ -155,7 +155,7 @@
 				TargetAttributes = {
 					C41649C11F645E5C0094427F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 69SF2RPHB9;
+						DevelopmentTeam = N582TJ9X3R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,7 +200,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -211,7 +211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		504FB76388A929615D8EFAA2 /* [CP] Embed Pods Frameworks */ = {
@@ -222,7 +222,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
@@ -230,12 +231,13 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB216A626CD359643BCD587D /* [CP] Check Pods Manifest.lock */ = {
@@ -398,10 +400,10 @@
 			baseConfigurationReference = D4668EF2BE6E84B63C2B23D5 /* Pods-Finding the user location.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69SF2RPHB9;
+				DEVELOPMENT_TEAM = N582TJ9X3R;
 				INFOPLIST_FILE = "Finding the user location/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codemask.Finding-the-user-location";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cate.PacManGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -412,10 +414,10 @@
 			baseConfigurationReference = 1BB47CD8C7AF60FD5985682E /* Pods-Finding the user location.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69SF2RPHB9;
+				DEVELOPMENT_TEAM = N582TJ9X3R;
 				INFOPLIST_FILE = "Finding the user location/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codemask.Finding-the-user-location";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cate.PacManGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

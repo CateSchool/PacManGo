@@ -88,7 +88,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     private func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
-        UIActivityIndicatorView.stopAnimating()
+        //UIActivityIndicatorView.stopAnimating()
     }
     
     // Present a view that prompts the user to sign in with Google
