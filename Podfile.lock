@@ -19,9 +19,11 @@ PODS:
   - GTMSessionFetcher/Core (1.1.15)
   - GTMSessionFetcher/Full (1.1.15):
     - GTMSessionFetcher/Core (= 1.1.15)
+  - Starscream (3.0.5)
 
 DEPENDENCIES:
   - GoogleSignIn
+  - Starscream
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -29,13 +31,15 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - Starscream
 
 SPEC CHECKSUMS:
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
 
-PODFILE CHECKSUM: 3cf78d08b3a23f20d57877798a4499575fa5919d
+PODFILE CHECKSUM: 1ea92cab1698d2d09cb6c62877222a4f5fb78feb
 
 COCOAPODS: 1.6.1

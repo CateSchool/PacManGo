@@ -6,5 +6,6 @@ target 'Finding the user location' do
   use_frameworks!
 
   pod 'GoogleSignIn'
+  pod 'Starscream'
 
 end
