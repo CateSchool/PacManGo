@@ -18,6 +18,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     let locationProximityModel = LocationProximityModel()
     @IBOutlet weak var map: MKMapView!
     
+    let websocket = Websocket()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +29,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         locationmanger.startUpdatingLocation()
    
         GIDSignIn.sharedInstance().uiDelegate = self
+        
         
         // Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()
