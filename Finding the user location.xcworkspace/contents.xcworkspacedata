@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Finding the user location/../Assets.xcassets">
+   </FileRef>
+   <FileRef
       location = "group:Finding the user location.xcodeproj">
    </FileRef>
    <FileRef

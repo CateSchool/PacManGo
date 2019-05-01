@@ -10,15 +10,16 @@ import UIKit
 import CoreLocation
 import MapKit
 import GoogleSignIn
+import Starscream
 
 
 
-class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, GIDSignInUIDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, GIDSignInUIDelegate, WebSocketDelegate {
     var locationmanger = CLLocationManager()
     let locationProximityModel = LocationProximityModel()
     @IBOutlet weak var map: MKMapView!
     
-    let websocket = Websocket()
+    var socket: WebSocket!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
    
         GIDSignIn.sharedInstance().uiDelegate = self
         
-        
+        var request = URLRequest(url: URL(string: "172.17.2.225:8080/sockets")!)
+        request.timeoutInterval = 5
+        socket = WebSocket(request: request)
+        socket.delegate = self
+        socket.connect()
         // Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()
         
@@ -42,6 +47,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -109,5 +115,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     @IBAction func googleSignIn(_ sender: GIDSignInButton) {
     }
     
+    
+    //WebSocket Protocol
+    func websocketDidConnect(socket: WebSocketClient) {
+        print("websocket is connected")
+    }
+    
+    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
+        print("websocket is disconnected: \(error?.localizedDescription)")
+    }
+    
+    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
+        print("got some text: \(text)")
+    }
+    
+    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
+        print("got some data: \(data.count)")
+    }
 }
 

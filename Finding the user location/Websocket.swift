@@ -10,6 +10,7 @@ import Foundation
 
 import Starscream
 
+/*
 class Websocket: WebSocketDelegate{
     let socket = WebSocket(url: URL(string: "ws://172.17.2.225:8080/sockets")!)
     
@@ -17,7 +18,10 @@ class Websocket: WebSocketDelegate{
         
         socket.delegate = self
         socket.connect()
+        socket.write(string: "Hi Server!") //example on how to write text over the socket!
     }
+    
+    
     
     func websocketDidConnect(socket: WebSocketClient) {
         print("websocket is connected")
@@ -34,5 +38,7 @@ class Websocket: WebSocketDelegate{
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         print("got some data: \(data.count)")
     }
+    
+    
     
 }
