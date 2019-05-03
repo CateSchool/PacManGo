@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jEp-68-DrI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jEp-68-DrI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="QQv-cM-nFS">
             <objects>
-                <viewController id="gJK-kS-sLF" sceneMemberID="viewController">
+                <viewController id="gJK-kS-sLF" customClass="PlayerViewController" customModule="Finding_the_user_location" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rZr-vG-dQs"/>
                         <viewControllerLayoutGuide type="bottom" id="Z1v-aY-deB"/>
@@ -161,6 +160,24 @@ WW91IHdpbGwgam9pbiBhbiBleGlzdGluZyBnYW1lAy8KWW91IHdpbGwgY3JlYXRlIGEgbmV3IGdhbWU
             </objects>
             <point key="canvasLocation" x="-602.39999999999998" y="-298.2008995502249"/>
         </scene>
+        <!--Google Sign In View Controller-->
+        <scene sceneID="WVN-y3-OhJ">
+            <objects>
+                <viewController id="EZs-nP-UyP" customClass="GoogleSignInViewController" customModule="Finding_the_user_location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wA6-fY-dnF"/>
+                        <viewControllerLayoutGuide type="bottom" id="5nM-Wc-7Gk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ptz-uh-5wA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yW6-yy-EKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-751" y="-1050"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="DI0-E6-uij">
             <objects>
@@ -178,7 +195,9 @@ WW91IHdpbGwgam9pbiBhbiBleGlzdGluZyBnYW1lAy8KWW91IHdpbGwgY3JlYXRlIGEgbmV3IGdhbWU
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In to Google"/>
                                 <connections>
+                                    <action selector="GIDButton:" destination="low-Rt-2AI" eventType="touchUpInside" id="C2u-ia-RNC"/>
                                     <action selector="googleSignIn:" destination="low-Rt-2AI" eventType="touchUpInside" id="6tB-gw-1Aj"/>
+                                    <segue destination="EZs-nP-UyP" kind="show" identifier="pressedGIDButton" id="UOD-ye-obe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,7 +207,7 @@ WW91IHdpbGwgam9pbiBhbiBleGlzdGluZyBnYW1lAy8KWW91IHdpbGwgY3JlYXRlIGEgbmV3IGdhbWU
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsZ-xD-z8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="low-Rt-2AI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1292" y="-298"/>
+            <point key="canvasLocation" x="-1530" y="-312"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KeS-uc-vcP">
@@ -226,7 +245,7 @@ WW91IHdpbGwgam9pbiBhbiBleGlzdGluZyBnYW1lAy8KWW91IHdpbGwgY3JlYXRlIGEgbmV3IGdhbWU
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co8-Em-m02">
-                                                <rect key="frame" x="35" y="160" width="61" height="21"/>
+                                                <rect key="frame" x="40" y="188" width="61" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -274,6 +293,7 @@ WW91IHdpbGwgam9pbiBhbiBleGlzdGluZyBnYW1lAy8KWW91IHdpbGwgY3JlYXRlIGEgbmV3IGdhbWU
                     </view>
                     <connections>
                         <outlet property="map" destination="W2D-Fo-aVx" id="3cD-WH-m6r"/>
+                        <outlet property="stopWatch" destination="Co8-Em-m02" id="I3w-hM-cm3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mol-Vg-kSS" sceneMemberID="firstResponder"/>

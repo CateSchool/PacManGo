@@ -106,8 +106,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func googleSignIn(_ sender: GIDSignInButton) {
+    @IBAction func SignIn(_ sender: UIButton) {
+  performSegue(withIdentifier:"pressedGIDButton", sender:self )
+    
     }
+    
     
 }
 

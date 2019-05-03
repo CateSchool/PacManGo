@@ -7,10 +7,21 @@
 //
 
 import Foundation
-
 import Starscream
 
 
 
-
-
+class gameModel {
+/*
+    var count = 0.0
+    var timer = Timer()
+    
+    
+    
+    @IBOutlet weak var stopWatch: UILabel!
+   
+    stopWatch.text = String(count)
+    
+/*
+    
+}
