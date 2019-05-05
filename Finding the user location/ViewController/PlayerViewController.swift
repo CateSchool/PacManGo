@@ -9,6 +9,14 @@
 import UIKit
 
 class PlayerViewController: UIViewController {
+    
+    var data = ""
+    
+    /*
+     
+     var gameStatue = false
+     var playerNumber = false
+ */
 
     override func viewDidLoad() {
         super.viewDidLoad()

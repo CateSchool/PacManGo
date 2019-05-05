@@ -10,7 +10,7 @@
 		664F1E0B227C962800FFE3DA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664F1E0A227C962700FFE3DA /* PlayerViewController.swift */; };
 		664F1E0D227C97FE00FFE3DA /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664F1E0C227C97FE00FFE3DA /* GoogleSignInViewController.swift */; };
 		721B29362252AF550000730F /* LocationProximityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B29352252AF550000730F /* LocationProximityModel.swift */; };
-		728121AB226BD18B006208E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728121AA226BD18B006208E6 /* SecondViewController.swift */; };
+		728121AB226BD18B006208E6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728121AA226BD18B006208E6 /* GameViewController.swift */; };
 		728121AF226BD755006208E6 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728121AE226BD755006208E6 /* PlayerModel.swift */; };
 		728121B1226BDBA0006208E6 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728121B0226BDBA0006208E6 /* GameModel.swift */; };
 		8782981122710ADB00B81509 /* Websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782981022710ADB00B81509 /* Websocket.swift */; };
@@ -29,7 +29,7 @@
 		664F1E0A227C962700FFE3DA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		664F1E0C227C97FE00FFE3DA /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		721B29352252AF550000730F /* LocationProximityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProximityModel.swift; sourceTree = "<group>"; };
-		728121AA226BD18B006208E6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		728121AA226BD18B006208E6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		728121AE226BD755006208E6 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 		728121B0226BDBA0006208E6 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		8782981022710ADB00B81509 /* Websocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Websocket.swift; sourceTree = "<group>"; };
@@ -71,9 +71,9 @@
 		728121A9226794DA006208E6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C41649C71F645E5C0094427F /* ViewController.swift */,
 				664F1E0C227C97FE00FFE3DA /* GoogleSignInViewController.swift */,
-				728121AA226BD18B006208E6 /* SecondViewController.swift */,
+				C41649C71F645E5C0094427F /* ViewController.swift */,
+				728121AA226BD18B006208E6 /* GameViewController.swift */,
 				664F1E0A227C962700FFE3DA /* PlayerViewController.swift */,
 			);
 			path = ViewController;
@@ -281,7 +281,7 @@
 			files = (
 				728121AF226BD755006208E6 /* PlayerModel.swift in Sources */,
 				664F1E0B227C962800FFE3DA /* PlayerViewController.swift in Sources */,
-				728121AB226BD18B006208E6 /* SecondViewController.swift in Sources */,
+				728121AB226BD18B006208E6 /* GameViewController.swift in Sources */,
 				664F1E0D227C97FE00FFE3DA /* GoogleSignInViewController.swift in Sources */,
 				721B29362252AF550000730F /* LocationProximityModel.swift in Sources */,
 				C41649C81F645E5C0094427F /* ViewController.swift in Sources */,

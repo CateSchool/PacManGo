@@ -49,6 +49,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         // Dispose of any resources that can be recreated.
         
     }
+    
+    
+    @IBAction func goButtonPressed(_ sender: UIButton) {
+        
+        //Need code to tell server that a person is joining. Require data from server(gamestatus, player number etc.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "startGame" {
+            let playerVC = segue.destination as! PlayerViewController
+            /*
+                Set up the variables in PlayerViewController in order for people to see.
+ 
+ 
+ 
+ */
+        }
+    }
+    
+    
+    //Proximity
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userlocation: CLLocation = locations[0]
@@ -96,6 +117,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
     }
     
+    //Google Signin
+    
     private func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
         //UIActivityIndicatorView.stopAnimating()
     }
@@ -134,5 +157,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         print("got some data: \(data.count)")
     }
+    
+    //After receiving message, save data into Game/Player/... model so we don't have to call the server from other view controllers. 
 }
 
