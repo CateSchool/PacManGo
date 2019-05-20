@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
-
+//evaluates the proximity between the user's coordinates and the coordinates of a set location. We figured this will be important to implement in the game when detecting the proximity between a ghost and a pacman. Currently, this code is not implemented into the game.
 class LocationProximityModel {
     var currentLocation: [CLLocationDegrees]?
     

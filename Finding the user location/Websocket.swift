@@ -10,6 +10,7 @@ import Foundation
 
 import Starscream
 
+//This was the original file that Starscream would be implemented. We switched to the ViewController file to test connection. 
 /*
 class Websocket: WebSocketDelegate{
     let socket = WebSocket(url: URL(string: "ws://172.17.2.225:8080/sockets")!)

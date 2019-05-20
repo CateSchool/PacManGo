@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+//The controller that would run the game. Communicates with GameModel and PlayerModel. 
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -20,5 +20,6 @@ class GameViewController: UIViewController {
 
     @IBOutlet weak var allPlayerInfo: UITableView!
    
+    
    
 }

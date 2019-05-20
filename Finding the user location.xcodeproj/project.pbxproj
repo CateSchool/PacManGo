@@ -63,7 +63,6 @@
 				721B29352252AF550000730F /* LocationProximityModel.swift */,
 				728121B0226BDBA0006208E6 /* GameModel.swift */,
 				728121AE226BD755006208E6 /* PlayerModel.swift */,
-				C41649C91F645E5C0094427F /* Main.storyboard */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +110,7 @@
 			children = (
 				C41649C51F645E5C0094427F /* AppDelegate.swift */,
 				8782981022710ADB00B81509 /* Websocket.swift */,
+				C41649C91F645E5C0094427F /* Main.storyboard */,
 				728121A9226794DA006208E6 /* ViewController */,
 				728121A8226794C6006208E6 /* Model */,
 				C41649CC1F645E5C0094427F /* Assets.xcassets */,
@@ -420,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.PacManGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -434,7 +434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.PacManGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

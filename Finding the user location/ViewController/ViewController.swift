@@ -56,7 +56,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         //Need code to tell server that a person is joining. Require data from server(gamestatus, player number etc.
     }
     
-    
+    // Prepares for the Segue that the Go button initiates. Sends the information received from server forward.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "startGame" {
             let playerVC = segue.destination as! PlayerViewController
@@ -159,6 +159,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         print("got some data: \(data.count)")
     }
     
-    //After receiving message, save data into Game/Player/... model so we don't have to call the server from other view controllers. 
+    //After receiving message, save data into Game/Player/... model. Then we don't have to call the server from other view controllers.
 }
 

@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let email = user.profile.email
         }
     }
+    //Got help from the internet for the Google Sign In mechanism. The above declarations can allow us to access the player's name based on their Google accounts.
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
               withError error: Error!) {

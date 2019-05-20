@@ -35,7 +35,7 @@ class PlayerViewController: UIViewController {
             "\n \(thirdPlayer.name)" +
             "\(thirdPlayer.type)"
     }
-    
+    //This is function is to display the different players and their roles in the Player View Controller. Each player would be able to see other players in the game.
 
     @IBOutlet weak var rolePicture: UIImageView!
     
@@ -47,7 +47,8 @@ class PlayerViewController: UIViewController {
     @IBAction func joinMainGamePage(_ sender: UIButton) {
         performSegue(withIdentifier: "toMainGame", sender: self)
     }
-   
+   //Pressing this button would transfer one from the player page to the Main Game page.
+    
     
 
 

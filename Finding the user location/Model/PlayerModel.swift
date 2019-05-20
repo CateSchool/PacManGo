@@ -22,3 +22,4 @@ class Player {
     }
     
 }
+//this class contains the different values of the player, though it is sort of repititious with what we have in the gameModel.

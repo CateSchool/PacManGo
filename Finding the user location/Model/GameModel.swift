@@ -8,16 +8,17 @@
 
 import Foundation
 
-
+//struct for the different possible powerups
 struct PowerUps {
     var canEatGhost: Bool = false
 }
-
+//struct that hold the different values of the game status
 struct GameStatus {
     var iBeaconUUID: String = ""
     var started: Bool = false
     var timeElapsed: Double = 0 // time in milliseconds
 }
+//Struct that holds the different values of the player inluding location, user ID, alive/dead, and what powerups they have
 struct AdvancedPlayerInfo {
     var userID: String = ""
     var latitude: Double = 0
@@ -26,17 +27,16 @@ struct AdvancedPlayerInfo {
     var alive: String = ""
     var powerUps: PowerUps = PowerUps()
 
-//info that gets send to the server
-        
+    
     }
 
-
+//this gameState struct contains the master information for player and game state.
 struct GameState {
     var playerStates: [AdvancedPlayerInfo] = []
     var gameStatus: GameStatus = GameStatus()
 }
 
-
+//dummy data to display on the Game view controller. This code should be placed in the game view controller.
 class playerBasicInfo {
     let player1 = Player(name: "JSON", initialTime: 0, type: "PacMan", power: "")
     let player2 = Player(name: "Jason", initialTime: 0, type: "Ghost", power: "")
