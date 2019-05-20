@@ -52,9 +52,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     
     @IBAction func goButtonPressed(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "starGame", sender: self)
         //Need code to tell server that a person is joining. Require data from server(gamestatus, player number etc.
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "startGame" {

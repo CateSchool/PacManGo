@@ -9,6 +9,10 @@
 import UIKit
 
 class PlayerViewController: UIViewController {
+   
+    let basicInfo = playerBasicInfo()
+    
+
     
     var data = ""
     
@@ -21,18 +25,31 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let firstPlayer = basicInfo.player1
+    
+        let secondPlayer = basicInfo.player2
+        
+        let thirdPlayer = basicInfo.player3
+        
+        allPlayerInformation.text = "\(firstPlayer.name)" + "\(firstPlayer.type)" +  "\n \(secondPlayer.name)" + "\(secondPlayer.type)" +
+            "\n \(thirdPlayer.name)" +
+            "\(thirdPlayer.type)"
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var rolePicture: UIImageView!
+    
+    
+  
+    @IBOutlet weak var allPlayerInformation: UILabel!
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func joinMainGamePage(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMainGame", sender: self)
     }
-    */
+   
+    
+
 
 }
+

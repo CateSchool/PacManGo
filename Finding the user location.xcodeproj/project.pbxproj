@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66387D5022812FB300D9EE78 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66387D4F22812FB300D9EE78 /* SignInViewController.swift */; };
 		664F1E0B227C962800FFE3DA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664F1E0A227C962700FFE3DA /* PlayerViewController.swift */; };
-		664F1E0D227C97FE00FFE3DA /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664F1E0C227C97FE00FFE3DA /* GoogleSignInViewController.swift */; };
 		721B29362252AF550000730F /* LocationProximityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B29352252AF550000730F /* LocationProximityModel.swift */; };
 		728121AB226BD18B006208E6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728121AA226BD18B006208E6 /* GameViewController.swift */; };
 		728121AF226BD755006208E6 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728121AE226BD755006208E6 /* PlayerModel.swift */; };
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		1BB47CD8C7AF60FD5985682E /* Pods-Finding the user location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finding the user location.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location.release.xcconfig"; sourceTree = "<group>"; };
 		36DF5D3391A83B64599E8508 /* Pods_Finding_the_user_location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finding_the_user_location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66387D4F22812FB300D9EE78 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		664F1E0A227C962700FFE3DA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		664F1E0C227C97FE00FFE3DA /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		721B29352252AF550000730F /* LocationProximityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProximityModel.swift; sourceTree = "<group>"; };
 		728121AA226BD18B006208E6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		728121AE226BD755006208E6 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 		728121A9226794DA006208E6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				664F1E0C227C97FE00FFE3DA /* GoogleSignInViewController.swift */,
 				C41649C71F645E5C0094427F /* ViewController.swift */,
+				66387D4F22812FB300D9EE78 /* SignInViewController.swift */,
 				728121AA226BD18B006208E6 /* GameViewController.swift */,
 				664F1E0A227C962700FFE3DA /* PlayerViewController.swift */,
 			);
@@ -233,6 +233,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Finding the user location/Pods-Finding the user location-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
@@ -241,6 +242,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
@@ -282,9 +284,9 @@
 				728121AF226BD755006208E6 /* PlayerModel.swift in Sources */,
 				664F1E0B227C962800FFE3DA /* PlayerViewController.swift in Sources */,
 				728121AB226BD18B006208E6 /* GameViewController.swift in Sources */,
-				664F1E0D227C97FE00FFE3DA /* GoogleSignInViewController.swift in Sources */,
 				721B29362252AF550000730F /* LocationProximityModel.swift in Sources */,
 				C41649C81F645E5C0094427F /* ViewController.swift in Sources */,
+				66387D5022812FB300D9EE78 /* SignInViewController.swift in Sources */,
 				C41649C61F645E5C0094427F /* AppDelegate.swift in Sources */,
 				728121B1226BDBA0006208E6 /* GameModel.swift in Sources */,
 				8782981122710ADB00B81509 /* Websocket.swift in Sources */,
@@ -418,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.PacManGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -432,7 +434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cate.cs.PacManGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

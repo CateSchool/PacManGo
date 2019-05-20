@@ -9,12 +9,16 @@
 import Foundation
 
 class Player {
-    init(initialTime: Date, type: String) {
+    var initialTime: Int = 0
+    var type: String
+    var name: String
+    var power: String = ""
+    
+    init(name: String, initialTime: Int, type: String, power: String) {
+        self.name = name
         self.initialTime = initialTime
         self.type = type
-        
+        self.power = power
     }
     
-    var initialTime: Date
-    var type: String
 }
